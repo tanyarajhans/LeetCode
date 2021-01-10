@@ -1,3 +1,4 @@
+[Discussion Post (created on 10/0/2021 at 19:20)](https://leetcode.com/problems/number-of-longest-increasing-subsequence/discuss/1010535/2D-DP-or-C%2B%2B)  
 <h2>673. Number of Longest Increasing Subsequence</h2><h3>Medium</h3><hr><div><p>Given an integer array&nbsp;<code>nums</code>, return <em>the number of longest increasing subsequences.</em></p>
 
 <p><strong>Notice</strong> that the sequence has to be <strong>strictly</strong> increasing.</p>
