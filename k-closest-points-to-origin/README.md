@@ -1,3 +1,4 @@
+[Discussion Post (created on 13/0/2021 at 17:23)](https://leetcode.com/problems/k-closest-points-to-origin/discuss/1014741/Heap-Solution-%3A)-C%2B%2B)  
 <h2>973. K Closest Points to Origin</h2><h3>Medium</h3><hr><div><p>We have a list of <code>points</code>&nbsp;on the plane.&nbsp; Find the <code>K</code> closest points to the origin <code>(0, 0)</code>.</p>
 
 <p>(Here, the distance between two points on a plane is the Euclidean distance.)</p>
