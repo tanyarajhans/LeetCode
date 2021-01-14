@@ -1,3 +1,4 @@
+[Discussion Post (created on 14/0/2021 at 14:6)](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/discuss/1016185/2D-DP-C%2B%2B)  
 <h2>309. Best Time to Buy and Sell Stock with Cooldown</h2><h3>Medium</h3><hr><div><p>Say you have an array for which the <i>i</i><sup>th</sup> element is the price of a given stock on day <i>i</i>.</p>
 
 <p>Design an algorithm to find the maximum profit. You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times) with the following restrictions:</p>
