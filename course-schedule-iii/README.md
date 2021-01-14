@@ -1,3 +1,4 @@
+[Discussion Post (created on 14/0/2021 at 19:43)](https://leetcode.com/problems/course-schedule-iii/discuss/1016569/Priority-Queue-or-C%2B%2B)  
 <h2>630. Course Schedule III</h2><h3>Hard</h3><hr><div><p>There are <code>n</code> different online courses numbered from <code>1</code> to <code>n</code>. Each course has some duration(course length) <code>t</code> and closed on <code>d<sub>th</sub></code> day. A course should be taken <b>continuously</b> for <code>t</code> days and must be finished before or on the <code>d<sub>th</sub></code> day. You will start at the <code>1<sub>st</sub></code> day.</p>
 
 <p>Given <code>n</code> online courses represented by pairs <code>(t,d)</code>, your task is to find the maximal number of courses that can be taken.</p>
