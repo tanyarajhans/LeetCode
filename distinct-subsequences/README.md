@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/0/2021 at 15:30)](https://leetcode.com/problems/distinct-subsequences/discuss/1021259/Recursion-%2B-Memoization-or-C%2B%2B)  
 <h2>115. Distinct Subsequences</h2><h3>Hard</h3><hr><div><p>Given two strings <code>s</code> and <code>t</code>, return <em>the&nbsp;number of distinct subsequences of <code>s</code> which equals <code>t</code></em>.</p>
 
 <p>A string's <strong>subsequence</strong> is a new string formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., <code>"ACE"</code> is a subsequence of <code>"ABCDE"</code> while <code>"AEC"</code> is not).</p>
