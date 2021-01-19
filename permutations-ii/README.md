@@ -1,3 +1,4 @@
+[Discussion Post (created on 19/0/2021 at 20:57)](https://leetcode.com/problems/permutations-ii/discuss/1024681/Shortest-Solution-C%2B%2B)  
 <h2>47. Permutations II</h2><h3>Medium</h3><hr><div><p>Given a collection of numbers, <code>nums</code>,&nbsp;that might contain duplicates, return <em>all possible unique permutations <strong>in any order</strong>.</em></p>
 
 <p>&nbsp;</p>
