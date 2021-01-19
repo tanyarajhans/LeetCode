@@ -1,3 +1,4 @@
+[Discussion Post (created on 19/0/2021 at 21:17)](https://leetcode.com/problems/combinations/discuss/1024708/C%2B%2B-or-Backtracking)  
 <h2>77. Combinations</h2><h3>Medium</h3><hr><div><p>Given two integers <em>n</em> and <em>k</em>, return all possible combinations of <em>k</em> numbers out of 1 ... <em>n</em>.</p>
 
 <p>You may return the answer in <strong>any order</strong>.</p>
