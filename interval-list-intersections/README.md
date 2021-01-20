@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/0/2021 at 20:55)](https://leetcode.com/problems/interval-list-intersections/discuss/1026297/Two-Pointer-or-C%2B%2B-or-Beats-100)  
 <h2>986. Interval List Intersections</h2><h3>Medium</h3><hr><div><p>You are given two lists of closed intervals, <code>firstList</code> and <code>secondList</code>, where <code>firstList[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> and <code>secondList[j] = [start<sub>j</sub>, end<sub>j</sub>]</code>. Each list of intervals is pairwise <strong>disjoint</strong> and in <strong>sorted order</strong>.</p>
 
 <p>Return <em>the intersection of these two interval lists</em>.</p>
