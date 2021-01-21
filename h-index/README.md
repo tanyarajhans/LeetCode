@@ -1,3 +1,4 @@
+[Discussion Post (created on 21/0/2021 at 20:12)](https://leetcode.com/problems/h-index/discuss/1027868/Easy-C%2B%2B)  
 <h2>274. H-Index</h2><h3>Medium</h3><hr><div><p>Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.</p>
 
 <p>According to the <a href="https://en.wikipedia.org/wiki/H-index" target="_blank">definition of h-index on Wikipedia</a>: "A scientist has index <i>h</i> if <i>h</i> of his/her <i>N</i> papers have <b>at least</b> <i>h</i> citations each, and the other <i>N − h</i> papers have <b>no more than</b> <i>h</i> citations each."</p>
