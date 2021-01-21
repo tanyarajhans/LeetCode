@@ -1,3 +1,4 @@
+[Discussion Post (created on 21/0/2021 at 17:1)](https://leetcode.com/problems/reorder-list/discuss/1027696/O(n)-space-or-C%2B%2B)  
 <h2>143. Reorder List</h2><h3>Medium</h3><hr><div><p>Given a singly linked list <em>L</em>: <em>L</em><sub>0</sub>→<em>L</em><sub>1</sub>→…→<em>L</em><sub><em>n</em>-1</sub>→<em>L</em><sub>n</sub>,<br>
 reorder it to: <em>L</em><sub>0</sub>→<em>L</em><sub><em>n</em></sub>→<em>L</em><sub>1</sub>→<em>L</em><sub><em>n</em>-1</sub>→<em>L</em><sub>2</sub>→<em>L</em><sub><em>n</em>-2</sub>→…</p>
 
