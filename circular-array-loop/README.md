@@ -1,3 +1,4 @@
+[Discussion Post (created on 22/0/2021 at 22:59)](https://leetcode.com/problems/circular-array-loop/discuss/1029672/Fast-and-Slow-Pointer-or-C%2B%2B)  
 <h2>457. Circular Array Loop</h2><h3>Medium</h3><hr><div><p>You are given a <b>circular</b> array <code>nums</code> of positive and negative integers. If a number <i>k</i> at an index is positive, then move forward <i>k</i> steps. Conversely, if it's negative (-<i>k</i>), move backward <i>k</i>&nbsp;steps. Since the array is circular, you may assume that the last element's next element is the first element, and the first element's previous element is the last element.</p>
 
 <p>Determine if there is a loop (or a cycle) in <code>nums</code>. A cycle must start and end at the same index and the cycle's length &gt; 1. Furthermore, movements in a cycle must all follow a single direction. In other words, a cycle must not consist of both forward and backward movements.</p>
