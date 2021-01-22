@@ -1,3 +1,4 @@
+[Discussion Post (created on 22/0/2021 at 17:59)](https://leetcode.com/problems/word-search/discuss/1029329/Easy-To-Understand-or-DFS-or-C%2B%2B)  
 <h2>79. Word Search</h2><h3>Medium</h3><hr><div><p>Given an&nbsp;<code>m x n</code> <code>board</code> and a <code>word</code>, find if the word exists in the grid.</p>
 
 <p>The word can be constructed from letters of sequentially adjacent cells, where "adjacent" cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.</p>
