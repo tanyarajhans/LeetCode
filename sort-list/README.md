@@ -1,3 +1,4 @@
+[Discussion Post (created on 24/0/2021 at 2:34)](https://leetcode.com/problems/sort-list/discuss/1031646/C%2B%2B-or-BEATS-96)  
 <h2>148. Sort List</h2><h3>Medium</h3><hr><div><p>Given the <code>head</code> of a linked list, return <em>the list after sorting it in <strong>ascending order</strong></em>.</p>
 
 <p><strong>Follow up:</strong> Can you sort the linked list in <code>O(n logn)</code> time and <code>O(1)</code>&nbsp;memory (i.e. constant space)?</p>
