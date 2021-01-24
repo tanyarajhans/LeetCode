@@ -1,3 +1,4 @@
+[Discussion Post (created on 24/0/2021 at 17:37)](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/discuss/1032789/Simple-Binary-Search-C%2B%2B)  
 <h2>1482. Minimum Number of Days to Make m Bouquets</h2><h3>Medium</h3><hr><div><p>Given an integer array <code>bloomDay</code>, an integer <code>m</code> and an integer <code>k</code>.</p>
 
 <p>We need to make <code>m</code>&nbsp;bouquets. To make a bouquet,&nbsp;you need to use <code>k</code> <strong>adjacent flowers</strong> from the garden.</p>
