@@ -1,3 +1,4 @@
+[Discussion Post (created on 28/0/2021 at 18:16)](https://leetcode.com/problems/evaluate-division/discuss/1038980/100-faster-or-C%2B%2B-or-DFS)  
 <h2>399. Evaluate Division</h2><h3>Medium</h3><hr><div><p>You are given an array of variable pairs <code>equations</code> and an array of real numbers <code>values</code>, where <code>equations[i] = [A<sub>i</sub>, B<sub>i</sub>]</code> and <code>values[i]</code> represent the equation <code>A<sub>i</sub> / B<sub>i</sub> = values[i]</code>. Each <code>A<sub>i</sub></code> or <code>B<sub>i</sub></code> is a string that represents a single variable.</p>
 
 <p>You are also given some <code>queries</code>, where <code>queries[j] = [C<sub>j</sub>, D<sub>j</sub>]</code> represents the <code>j<sup>th</sup></code> query where you must find the answer for <code>C<sub>j</sub> / D<sub>j</sub> = ?</code>.</p>
