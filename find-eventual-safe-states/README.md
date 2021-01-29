@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/0/2021 at 14:34)](https://leetcode.com/problems/find-eventual-safe-states/discuss/1040211/DFS-or-Beats-95-or-C%2B%2B)  
 <h2>802. Find Eventual Safe States</h2><h3>Medium</h3><hr><div><p>We start at some node in a directed graph, and every turn, we walk along a directed edge of the graph. If we reach a terminal node (that is, it has no outgoing directed edges), we stop.</p>
 
 <p>We define a starting node to be <strong>safe</strong> if we must eventually walk to a terminal node. More specifically, there is a natural number <code>k</code>, so that we must have stopped at a terminal node in less than <code>k</code> steps for <strong>any choice of where to walk</strong>.</p>
