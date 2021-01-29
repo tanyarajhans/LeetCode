@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/0/2021 at 14:43)](https://leetcode.com/problems/keys-and-rooms/discuss/1040220/DFS-or-C%2B%2B-or-Simple-Solution)  
 <h2>841. Keys and Rooms</h2><h3>Medium</h3><hr><div><p>There are <code>N</code> rooms and you start in room <code>0</code>.&nbsp; Each room has a distinct number in <code>0, 1, 2, ..., N-1</code>, and each room may have&nbsp;some keys to access the next room.&nbsp;</p>
 
 <p>Formally, each room <code>i</code>&nbsp;has a list of keys <code>rooms[i]</code>, and each key <code>rooms[i][j]</code> is an integer in <code>[0, 1, ..., N-1]</code> where <code>N = rooms.length</code>.&nbsp; A key <code>rooms[i][j] = v</code>&nbsp;opens the room with number <code>v</code>.</p>
