@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/0/2021 at 18:55)](https://leetcode.com/problems/possible-bipartition/discuss/1040464/DFS-or-C%2B%2B-or-Coloring)  
 <h2>886. Possible Bipartition</h2><h3>Medium</h3><hr><div><p>Given a set of <code>N</code>&nbsp;people (numbered <code>1, 2, ..., N</code>), we would like to split everyone into two groups of <strong>any</strong> size.</p>
 
 <p>Each person may dislike some other people, and they should not go into the same group.&nbsp;</p>
