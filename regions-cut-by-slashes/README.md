@@ -1,3 +1,4 @@
+[Discussion Post (created on 30/0/2021 at 13:22)](https://leetcode.com/problems/regions-cut-by-slashes/discuss/1041633/DFS-Solution-C%2B%2B)  
 <h2>959. Regions Cut By Slashes</h2><h3>Medium</h3><hr><div><p>In a N x N&nbsp;<code>grid</code> composed of 1 x 1 squares, each 1 x 1 square consists of a <code>/</code>, <code>\</code>, or blank space.&nbsp; These characters divide the square into contiguous regions.</p>
 
 <p>(Note that backslash characters are escaped, so a <code>\</code>&nbsp;is represented as <code>"\\"</code>.)</p>
