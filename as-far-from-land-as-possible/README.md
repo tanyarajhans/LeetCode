@@ -1,3 +1,4 @@
+[Discussion Post (created on 30/0/2021 at 17:32)](https://leetcode.com/problems/as-far-from-land-as-possible/discuss/1041898/EASY-BFS-Solution-or-C%2B%2B)  
 <h2>1162. As Far from Land as Possible</h2><h3>Medium</h3><hr><div><p>Given an <code>n x n</code> <code>grid</code>&nbsp;containing only values <code>0</code> and <code>1</code>, where&nbsp;<code>0</code> represents water&nbsp;and <code>1</code> represents land, find a water cell such that its distance to the nearest land cell is maximized, and return the distance.&nbsp;If no land or water exists in the grid, return <code>-1</code>.</p>
 
 <p>The distance used in this problem is the Manhattan distance:&nbsp;the distance between two cells <code>(x0, y0)</code> and <code>(x1, y1)</code> is <code>|x0 - x1| + |y0 - y1|</code>.</p>
