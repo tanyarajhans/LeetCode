@@ -1,3 +1,4 @@
+[Discussion Post (created on 30/0/2021 at 18:33)](https://leetcode.com/problems/number-of-closed-islands/discuss/1041962/DFS-or-C%2B%2B-solution-or-Beats-99.5)  
 <h2>1254. Number of Closed Islands</h2><h3>Medium</h3><hr><div><p>Given a 2D&nbsp;<code>grid</code> consists of <code>0s</code> (land)&nbsp;and <code>1s</code> (water).&nbsp; An <em>island</em> is a maximal 4-directionally connected group of <code><font face="monospace">0</font>s</code> and a <em>closed island</em>&nbsp;is an island <strong>totally</strong>&nbsp;(all left, top, right, bottom) surrounded by <code>1s.</code></p>
 
 <p>Return the number of <em>closed islands</em>.</p>
