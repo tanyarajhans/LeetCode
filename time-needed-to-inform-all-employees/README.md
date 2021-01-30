@@ -1,3 +1,4 @@
+[Discussion Post (created on 31/0/2021 at 1:35)](https://leetcode.com/problems/time-needed-to-inform-all-employees/discuss/1042488/DFS-C%2B%2B-Solution)  
 <h2>1376. Time Needed to Inform All Employees</h2><h3>Medium</h3><hr><div><p>A company has <code>n</code> employees with a unique ID for each employee from <code>0</code> to <code>n - 1</code>. The head of the company has is the one with <code>headID</code>.</p>
 
 <p>Each employee has one&nbsp;direct manager given in the <code>manager</code> array where <code>manager[i]</code> is the direct manager of the <code>i-th</code> employee,&nbsp;<code>manager[headID] = -1</code>. Also it's guaranteed that the subordination relationships have a tree structure.</p>
