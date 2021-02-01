@@ -1,3 +1,4 @@
+[Discussion Post (created on 1/1/2021 at 16:13)](https://leetcode.com/problems/remove-k-digits/discuss/1044925/Simple-C%2B%2B-or-Using-string-as-stack)  
 <h2>402. Remove K Digits</h2><h3>Medium</h3><hr><div><p>Given a non-negative integer <i>num</i> represented as a string, remove <i>k</i> digits from the number so that the new number is the smallest possible.
 </p>
 
