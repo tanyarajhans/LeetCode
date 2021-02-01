@@ -1,3 +1,4 @@
+[Discussion Post (created on 1/1/2021 at 15:37)](https://leetcode.com/problems/wiggle-subsequence/discuss/1044893/Greedy-or-C%2B%2B)  
 <h2>376. Wiggle Subsequence</h2><h3>Medium</h3><hr><div><p>A sequence of numbers is called a <strong>wiggle sequence</strong> if the differences between successive numbers strictly alternate between positive and negative. The first difference (if one exists) may be either positive or negative. A sequence with fewer than two elements is trivially a wiggle sequence.</p>
 
 <p>For example, <code>[1,7,4,9,2,5]</code> is a wiggle sequence because the differences <code>(6,-3,5,-7,3)</code> are alternately positive and negative. In contrast, <code>[1,4,7,2,5]</code> and <code>[1,7,4,5,5]</code> are not wiggle sequences, the first because its first two differences are positive and the second because its last difference is zero.</p>
