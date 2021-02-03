@@ -1,3 +1,4 @@
+[Discussion Post (created on 3/1/2021 at 15:28)](https://leetcode.com/problems/boats-to-save-people/discuss/1047775/Two-Pointers-or-C%2B%2B)  
 <h2>881. Boats to Save People</h2><h3>Medium</h3><hr><div><p>You are given an array <code>people</code> where <code>people[i]</code> is the weight of the <code>i<sup>th</sup></code> person, and an <strong>infinite number of boats</strong> where each boat can carry a maximum weight of <code>limit</code>. Each boat carries at most two people at the same time, provided the sum of the weight of those people is at most <code>limit</code>.</p>
 
 <p>Return <em>the minimum number of boats to carry every given person</em>.</p>
