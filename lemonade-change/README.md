@@ -1,3 +1,4 @@
+[Discussion Post (created on 3/1/2021 at 13:37)](https://leetcode.com/problems/lemonade-change/discuss/1047647/C%2B%2B-or-96-faster)  
 <h2>860. Lemonade Change</h2><h3>Easy</h3><hr><div><p>At a lemonade stand, each lemonade costs <code>$5</code>.&nbsp;</p>
 
 <p>Customers are standing in a queue to buy from you, and order one at a time (in the order specified by <code>bills</code>).</p>
