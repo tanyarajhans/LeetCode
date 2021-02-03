@@ -1,3 +1,4 @@
+[Discussion Post (created on 3/1/2021 at 14:3)](https://leetcode.com/problems/advantage-shuffle/discuss/1047675/C%2B%2B-or-Using-multiset)  
 <h2>870. Advantage Shuffle</h2><h3>Medium</h3><hr><div><p>Given two arrays <code>A</code> and <code>B</code> of equal size, the <em>advantage of <code>A</code> with respect to <code>B</code></em> is the number of indices <code>i</code>&nbsp;for which <code>A[i] &gt; B[i]</code>.</p>
 
 <p>Return <strong>any</strong> permutation of <code>A</code> that maximizes its advantage with respect to <code>B</code>.</p>
