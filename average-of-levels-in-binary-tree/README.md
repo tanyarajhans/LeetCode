@@ -1,3 +1,4 @@
+[Discussion Post (created on 5/1/2021 at 0:6)](https://leetcode.com/problems/average-of-levels-in-binary-tree/discuss/1049896/C%2B%2B-or-BFS-Simple-Solution)  
 <h2>637. Average of Levels in Binary Tree</h2><h3>Easy</h3><hr><div>Given a non-empty binary tree, return the average value of the nodes on each level in the form of an array.
 
 <p><b>Example 1:</b><br>
