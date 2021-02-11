@@ -1,3 +1,4 @@
+[Discussion Post (created on 11/1/2021 at 13:3)](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/discuss/1060412/Recursive-or-C%2B%2B)  
 <h2>1022. Sum of Root To Leaf Binary Numbers</h2><h3>Easy</h3><hr><div><p>You are given the <code>root</code> of a binary tree where each node has a value <code>0</code>&nbsp;or <code>1</code>.&nbsp; Each root-to-leaf path represents a binary number starting with the most significant bit.&nbsp; For example, if the path is <code>0 -&gt; 1 -&gt; 1 -&gt; 0 -&gt; 1</code>, then this could represent <code>01101</code> in binary, which is <code>13</code>.</p>
 
 <p>For all leaves in the tree, consider the numbers represented by the path&nbsp;from the root to that leaf.</p>
