@@ -1,3 +1,4 @@
+[Discussion Post (created on 15/1/2021 at 15:20)](https://leetcode.com/problems/previous-permutation-with-one-swap/discuss/1066611/C%2B%2B-or-With-Explanation)  
 <h2>1053. Previous Permutation With One Swap</h2><h3>Medium</h3><hr><div><p>Given an array&nbsp;of positive integers <code>arr</code> (not necessarily distinct), return <em>the lexicographically largest permutation that is smaller than</em> <code>arr</code>, that can be <strong>made with exactly one swap</strong> (A <em>swap</em> exchanges the positions of two numbers <code>arr[i]</code> and <code>arr[j]</code>). If it cannot be done, then return the same array.</p>
 
 <p>&nbsp;</p>
