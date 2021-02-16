@@ -1,3 +1,4 @@
+[Discussion Post (created on 16/1/2021 at 16:44)](https://leetcode.com/problems/construct-k-palindrome-strings/discuss/1068238/C%2B%2B-or-Beats-99.8)  
 <h2>1400. Construct K Palindrome Strings</h2><h3>Medium</h3><hr><div><p>Given a string <code>s</code> and an integer <code>k</code>. You should construct <code>k</code> non-empty <strong>palindrome</strong> strings using <strong>all the characters</strong> in <code>s</code>.</p>
 
 <p>Return <em><strong>True</strong></em> if you can use all the characters in <code>s</code> to construct <code>k</code> palindrome strings or <em><strong>False</strong></em> otherwise.</p>
