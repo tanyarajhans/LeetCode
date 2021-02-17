@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/1/2021 at 20:33)](https://leetcode.com/problems/subdomain-visit-count/discuss/1069929/Easy-C%2B%2B-or-Unordered-Map)  
 <h2>811. Subdomain Visit Count</h2><h3>Easy</h3><hr><div><p>A website domain like "discuss.leetcode.com" consists of various subdomains. At the top level, we have "com", at the next level, we have "leetcode.com", and at the lowest level, "discuss.leetcode.com". When we visit a domain like "discuss.leetcode.com", we will also visit the parent domains "leetcode.com" and "com" implicitly.</p>
 
 <p>Now, call a "count-paired domain" to be a count (representing the number of visits this domain received), followed by a space, followed by the address. An example of a count-paired domain might be "9001 discuss.leetcode.com".</p>
