@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/1/2021 at 20:21)](https://leetcode.com/problems/shortest-completing-word/discuss/1069919/C%2B%2B-or-Easy-Solution)  
 <h2>748. Shortest Completing Word</h2><h3>Easy</h3><hr><div><p>Given a string <code>licensePlate</code> and an array of strings <code>words</code>, find the <strong>shortest completing</strong> word in <code>words</code>.</p>
 
 <p>A <strong>completing</strong> word is a word that <strong>contains all the letters</strong> in <code>licensePlate</code>. <strong>Ignore numbers and spaces</strong> in <code>licensePlate</code>, and treat letters as <strong>case insensitive</strong>. If a letter appears more than once in <code>licensePlate</code>, then it must appear in the word the same number of times or more.</p>
