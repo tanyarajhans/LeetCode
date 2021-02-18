@@ -1,3 +1,4 @@
+[Discussion Post (created on 19/1/2021 at 0:54)](https://leetcode.com/problems/encode-and-decode-tinyurl/discuss/1071815/C%2B%2B-or-Map)  
 <h2>535. Encode and Decode TinyURL</h2><h3>Medium</h3><hr><div><blockquote>Note: This is a companion problem to the <a href="https://leetcode.com/discuss/interview-question/system-design/" target="_blank">System Design</a> problem: <a href="https://leetcode.com/discuss/interview-question/124658/Design-a-URL-Shortener-(-TinyURL-)-System/" target="_blank">Design TinyURL</a>.</blockquote>
 
 <p>TinyURL is a URL shortening service where you enter a URL such as <code>https://leetcode.com/problems/design-tinyurl</code> and it returns a short URL such as <code>http://tinyurl.com/4e9iAk</code>.</p>
