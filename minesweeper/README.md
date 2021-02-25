@@ -1,3 +1,4 @@
+[Discussion Post (created on 25/1/2021 at 12:49)](https://leetcode.com/problems/minesweeper/discuss/1081962/C%2B%2B-or-DFS)  
 <h2>529. Minesweeper</h2><h3>Medium</h3><hr><div><p>Let's play the minesweeper game (<a href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)">Wikipedia</a>, <a href="http://minesweeperonline.com">online game</a>)!</p>
 
 <p>You are given a 2D char matrix representing the game board. <b>'M'</b> represents an <b>unrevealed</b> mine, <b>'E'</b> represents an <b>unrevealed</b> empty square, <b>'B'</b> represents a <b>revealed</b> blank square that has no adjacent (above, below, left, right, and all 4 diagonals) mines, <b>digit</b> ('1' to '8') represents how many mines are adjacent to this <b>revealed</b> square, and finally <b>'X'</b> represents a <b>revealed</b> mine.</p>
