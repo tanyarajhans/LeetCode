@@ -1,3 +1,4 @@
+[Discussion Post (created on 5/2/2021 at 21:34)](https://leetcode.com/problems/n-queens/submissions/)  
 [Discussion Post (created on 20/0/2021 at 22:0)](https://leetcode.com/problems/n-queens/discuss/?currentPage=1&orderBy=newest_to_oldest&query=)  
 <h2>51. N-Queens</h2><h3>Hard</h3><hr><div><p>The <strong>n-queens</strong> puzzle is the problem of placing <code>n</code> queens on an <code>n x n</code> chessboard such that no two queens attack each other.</p>
 
