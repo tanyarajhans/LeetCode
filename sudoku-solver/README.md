@@ -1,4 +1,3 @@
-[Discussion Post (created on 6/2/2021 at 18:28)](https://leetcode.com/problems/sudoku-solver/discuss/1096083/C%2B%2B-or-Backtracking)  
 <h2>37. Sudoku Solver</h2><h3>Hard</h3><hr><div><p>Write a program to solve a Sudoku puzzle by filling the empty cells.</p>
 
 <p>A&nbsp;sudoku solution must satisfy <strong>all of&nbsp;the following rules</strong>:</p>
