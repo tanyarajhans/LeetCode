@@ -1,3 +1,4 @@
+[Discussion Post (created on 6/2/2021 at 18:43)](https://leetcode.com/problems/palindrome-partitioning/discuss/1096101/C%2B%2B-or-Backtracking)  
 <h2>131. Palindrome Partitioning</h2><h3>Medium</h3><hr><div><p>Given a string <code>s</code>, partition <code>s</code> such that every substring of the partition is a <strong>palindrome</strong>. Return all possible palindrome partitioning of <code>s</code>.</p>
 
 <p>A <strong>palindrome</strong> string is a string that reads the same backward as forward.</p>
