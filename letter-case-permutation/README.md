@@ -1,3 +1,4 @@
+[Discussion Post (created on 7/2/2021 at 16:51)](https://leetcode.com/problems/letter-case-permutation/discuss/1097950/C%2B%2B-or-100-fastest-or-Backtracking)  
 <h2>784. Letter Case Permutation</h2><h3>Medium</h3><hr><div><p>Given a string S, we can transform every letter individually&nbsp;to be lowercase or uppercase to create another string.</p>
 
 <p>Return <em>a list of all possible strings we could create</em>. You can return the output&nbsp;in <strong>any order</strong>.</p>
