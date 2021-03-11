@@ -1,3 +1,4 @@
+[Discussion Post (created on 11/2/2021 at 19:17)](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/discuss/1104547/O(n)-or-C%2B%2B)  
 <h2>1784. Check if Binary String Has at Most One Segment of Ones</h2><h3>Easy</h3><hr><div><p>Given a binary string <code>s</code> <strong>​​​​​without leading zeros</strong>, return <code>true</code>​​​ <em>if </em><code>s</code><em> contains <strong>at most one contiguous segment of ones</strong></em>. Otherwise, return <code>false</code>.</p>
 
 <p>&nbsp;</p>
