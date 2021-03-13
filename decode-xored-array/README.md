@@ -1,3 +1,4 @@
+[Discussion Post (created on 13/2/2021 at 13:18)](https://leetcode.com/problems/decode-xored-array/discuss/1107184/C%2B%2B-or-O(n))  
 <h2>1720. Decode XORed Array</h2><h3>Easy</h3><hr><div><p>There is a <strong>hidden</strong> integer array <code>arr</code> that consists of <code>n</code> non-negative integers.</p>
 
 <p>It was encoded into another integer array <code>encoded</code> of length <code>n - 1</code>, such that <code>encoded[i] = arr[i] XOR arr[i + 1]</code>. For example, if <code>arr = [1,0,2,1]</code>, then <code>encoded = [1,2,3]</code>.</p>
