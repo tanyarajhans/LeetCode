@@ -1,3 +1,4 @@
+[Discussion Post (created on 13/2/2021 at 13:37)](https://leetcode.com/problems/decode-xored-permutation/discuss/1107203/O(n)-or-C%2B%2B)  
 <h2>1734. Decode XORed Permutation</h2><h3>Medium</h3><hr><div><p>There is an integer array <code>perm</code> that is a permutation of the first <code>n</code> positive integers, where <code>n</code> is always <strong>odd</strong>.</p>
 
 <p>It was encoded into another integer array <code>encoded</code> of length <code>n - 1</code>, such that <code>encoded[i] = perm[i] XOR perm[i + 1]</code>. For example, if <code>perm = [1,3,2]</code>, then <code>encoded = [2,1]</code>.</p>
