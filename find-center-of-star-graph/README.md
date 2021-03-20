@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/2/2021 at 21:52)](https://leetcode.com/problems/find-center-of-star-graph/discuss/1118885/Simple-or-C%2B%2B)  
 <h2>1791. Find Center of Star Graph</h2><h3>Medium</h3><hr><div><p>There is an undirected <strong>star</strong> graph consisting of <code>n</code> nodes labeled from <code>1</code> to <code>n</code>. A star graph is a graph where there is one <strong>center</strong> node and <strong>exactly</strong> <code>n - 1</code> edges that connect the center node with every other node.</p>
 
 <p>You are given a 2D integer array <code>edges</code> where each <code>edges[i] = [u<sub>i</sub>, v<sub>i</sub>]</code> indicates that there is an edge between the nodes <code>u<sub>i</sub></code> and <code>v<sub>i</sub></code>. Return the center of the given star graph.</p>
