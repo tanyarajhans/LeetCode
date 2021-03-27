@@ -1,3 +1,4 @@
+[Discussion Post (created on 27/2/2021 at 17:17)](https://leetcode.com/problems/distinct-subsequences/discuss/1129570/EASY-DP-or-C%2B%2B)  
 [Discussion Post (created on 17/0/2021 at 15:30)](https://leetcode.com/problems/distinct-subsequences/discuss/1021259/Recursion-%2B-Memoization-or-C%2B%2B)  
 <h2>115. Distinct Subsequences</h2><h3>Hard</h3><hr><div><p>Given two strings <code>s</code> and <code>t</code>, return <em>the&nbsp;number of distinct subsequences of <code>s</code> which equals <code>t</code></em>.</p>
 
