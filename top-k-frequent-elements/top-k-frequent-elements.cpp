@@ -10,7 +10,9 @@ public:
         }
         
         for(auto i : m){
-            pq.push({i.second, i.first});
+            pq.push({-i.second, i.first});
+            if(pq.size()>k)
+                pq.pop();
         }
         vector<int> ans;
         while(k-- && !pq.empty()){
