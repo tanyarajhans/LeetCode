@@ -1,3 +1,4 @@
+[Discussion Post (created on 19/3/2021 at 15:44)](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/discuss/?currentPage=1&orderBy=most_votes&query=)  
 <h2>378. Kth Smallest Element in a Sorted Matrix</h2><h3>Medium</h3><hr><div><p>Given an <code>n x n</code> <code>matrix</code> where each of the rows and columns are sorted in ascending order, return <em>the</em> <code>k<sup>th</sup></code> <em>smallest element in the matrix</em>.</p>
 
 <p>Note that it is the <code>k<sup>th</sup></code> smallest element <strong>in the sorted order</strong>, not the <code>k<sup>th</sup></code> <strong>distinct</strong> element.</p>
