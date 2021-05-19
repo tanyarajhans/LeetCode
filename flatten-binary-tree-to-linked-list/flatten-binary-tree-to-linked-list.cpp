@@ -14,16 +14,17 @@ public:
     void flatten(TreeNode* root) {
         if(root==NULL)
             return;
-        TreeNode* tl=root->left;
-        TreeNode* tr=root->right;
-        root->left=NULL;
-        flatten(tl);
-        flatten(tr);
-        root->right=tl;
-        TreeNode* curr=root;
-        while(curr->right!=NULL)
-            curr=curr->right;
-        curr->right=tr;
-        
+        while(root!=NULL){
+            if(root->left!=NULL){
+                TreeNode* tl=root->left;
+                TreeNode* curr=tl;
+                while(curr->right!=NULL)
+                    curr=curr->right;
+                curr->right=root->right; //Morris Traversal
+                root->left=NULL;
+                root->right=tl;
+            }
+            root=root->right;
+        }
     }
 };
