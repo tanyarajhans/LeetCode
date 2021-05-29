@@ -16,17 +16,14 @@ public:
              return NULL;
          
          TreeNode* root= new TreeNode(preorder[ps]);
-      //   if(is==ie)
-     //      return root;
-         ps--;
          int index;
          for(int i=is; i<=ie;i++){
-             if(root->val==inorder[i]){
+             if(preorder[ps]==inorder[i]){
                  index=i;
                  break;
              }
          }
-         
+         ps--;
          
          root->right=build(preorder,inorder,ps, index+1, ie);
          root->left=build(preorder,inorder,ps,is, index-1);
@@ -36,6 +33,6 @@ public:
     
     TreeNode* buildTree(vector<int>& inorder, vector<int>& post) {
         int m=post.size()-1;
-        return build(post, inorder,m ,0, inorder.size()-1);
+        return build(post, inorder, m,0, inorder.size()-1);
     }
 };
