@@ -8,15 +8,14 @@ public:
         if(n==1)
             return 1;
         for(int i=1;i<n;i++){
-            for(int j=0;j<i;j++){
-                if(nums[i]>nums[j] && dp[i]<=dp[j]){
+            for(int j=0;j<=i;j++){
+                if(nums[j]<nums[i] && dp[i]<dp[j]+1)
                     dp[i]=dp[j]+1;
-                }
             }
         }
         int ans=0;
-        for(auto &i: dp)
-            ans=max(ans,i);
+        for(int i=0;i<n;i++)
+            ans=max(ans,dp[i]);
         return ans;
     }
 };
