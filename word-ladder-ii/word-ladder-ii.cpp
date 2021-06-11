@@ -1,46 +1,61 @@
 class Solution {
 public:
-    vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList) {
-        vector<vector<string>> res;
-        unordered_set<string> visit;  //notice we need to clear visited word in list after finish this level of BFS
-        queue<vector<string>> q;
-        unordered_set<string> wordlist(wordList.begin(),wordList.end());
-        q.push({beginWord});
-        bool flag= false; //to see if we find shortest path
-        while(!q.empty()){
-            int size= q.size();
-            for(int i=0;i<size;i++){            //for this level
-                vector<string> cur = q.front();
-                q.pop();
-                vector<string> newadd =  addWord(cur.back(),wordlist); 
-                for(int j=0;j<newadd.size();j++){   //add a word into path
-                    vector<string> newline(cur.begin(),cur.end());
-                    newline.push_back(newadd[j]);
-                    if(newadd[j]==endWord){       
-                     flag=true;
-                    res.push_back(newline);
-                    }
-                    visit.insert(newadd[j]);
-                    q.push(newline);
-                }
-            }
-            if(flag) break;  //do not BFS further 
-            for(auto it=visit.begin();it!=visit.end();it++) wordlist.erase(*it); //erase visited one 
-            visit.clear();
+    vector<vector<string>>  ans;    //Stores all possible paths
+    
+    void DFS(string& beginWord, string& endWord, unordered_map<string, unordered_set<string>>& adj, vector<string> &path) {
+        path.push_back(beginWord);  //Push current word
+        if(beginWord == endWord)
+        {
+            ans.push_back(path);
+            path.pop_back();
+            return;
         }
-        return res;
+        for(auto x : adj[beginWord])
+            DFS(x, endWord, adj, path);
+        
+        path.pop_back();    //Pop current word to Backtrack
     }
     
-    vector<string> addWord( string word,unordered_set<string>& wordlist ){
-        vector<string> res;
-        for(int i=0;i<word.size();i++){
-            char s =word[i];
-            for(char c='a';c<='z';c++){
-                word[i]=c;
-                if(wordlist.count(word)) res.push_back(word);
+    vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList) {
+        unordered_map<string, unordered_set<string>> adj;   //Adjacency List
+        unordered_set<string> dict(wordList.begin(),wordList.end());   //Insert WordList in SET
+        
+        //STEP-1: Find min-depth using BFS
+        queue<string> Q;    //For BFS traversal
+        Q.push(beginWord);  //Push start node (beginWord)
+        unordered_map<string, int> visited; //Key->String (Node)...Value->Level (Depth of traversal)
+        visited[beginWord] = 0; //Start node will always be at level 0
+        while(!Q.empty())
+        {
+            string curr = Q.front();
+            Q.pop();
+            string temp = curr;
+            for(int i = 0; i < curr.size(); ++i)    //For all characters
+            {
+                for(char x = 'a'; x <= 'z'; ++x)    //Try all possible 26 letters
+                {
+                    if(temp[i] == x)    //Skip if letter is same as in original word
+                        continue;
+
+                    temp[i] = x;    
+                    if(dict.count(temp) > 0)    //Check if new word is present in wordList
+                    {
+                        if(visited.count(temp) == 0)    //check if the new word was already visited
+                        {
+                            visited[temp] = visited[curr] + 1;
+                            Q.push(temp);
+                            adj[curr].insert(temp);
+                        } 
+                        else if(visited[temp] == visited[curr] + 1) //If already visited and new word is the child (We should always move down)
+                            adj[curr].insert(temp);
+                    }
+                }
+                temp[i] = curr[i];  //Revert back temp to curr
             }
-            word[i]=s;
         }
-        return res;
+        //STEP-2: Find all possible paths at min-depth using DFS
+        vector<string> path;
+        DFS(beginWord, endWord, adj, path); //Find all possible paths with min-depth
+        return ans; 
     }
 };
