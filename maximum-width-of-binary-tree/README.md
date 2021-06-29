@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/5/2021 at 16:10)](https://leetcode.com/problems/maximum-width-of-binary-tree/discuss/1304586/C%2B%2B-or-BFS)  
 <h2>662. Maximum Width of Binary Tree</h2><h3>Medium</h3><hr><div><p>Given a binary tree, write a function to get the maximum width of the given tree. The maximum width of a tree is the maximum width among all levels.</p>
 
 <p>The width of one level is defined as the length between the end-nodes (the leftmost and right most non-null nodes in the level, where the <code>null</code> nodes between the end-nodes are also counted into the length calculation.</p>
