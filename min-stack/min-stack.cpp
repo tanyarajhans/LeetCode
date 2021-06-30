@@ -10,33 +10,33 @@ public:
     
     void push(int val) {
         if(s.empty()){
-            s.push(val);
+            s.push(0);
             minele=val;
         }
-        else if(val<minele){
-            long long int t=val;
-            t=2*t-minele;
-            s.push(t);
-            minele=val;
+        else{
+            s.push((long long int)val-minele);
+            if(val<minele)
+                minele=val;
         }
-        else
-            s.push(val);
+            
     }
     
     void pop() {
-        if(s.top()<minele){
-            long long int k=s.top();
-            minele=2*minele-k;
+        long long int k=s.top();
+        if(k<0){
+            minele=minele-k;
         }
         s.pop();
-        if(s.empty())
-            minele=INT_MAX;
     }
     
     int top() {
-        if(s.top()<minele)
+        long long int k=s.top();
+        if(k<0){
             return minele;
-        return s.top();
+        }
+        else{
+            return minele+k;
+        }
     }
     
     int getMin() {
