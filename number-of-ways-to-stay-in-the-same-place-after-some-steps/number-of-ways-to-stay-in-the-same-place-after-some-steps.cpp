@@ -1,34 +1,29 @@
 class Solution {
 public:
-    int t[502][502];
-    long long int mod =1e9+7;
-    
-    int solve(int steps, int pointer, int arrLen){
-        if(steps<0)
-            return 0;
-        
-        if(steps==0){
-            if(pointer==0)
-                return 1;
-            else
-                return 0;
-        }
-        if(pointer<0 || pointer>=arrLen)
-            return 0;
-        
-        
-        if(t[steps][pointer]!=-1)
-            return t[steps][pointer];
-        
-        int l=solve(steps-1, pointer-1, arrLen);
-        int r=solve(steps-1, pointer+1, arrLen);
-        int s=solve(steps-1, pointer, arrLen);
-        
-        return t[steps][pointer]=((l+r)%mod+s%mod)%mod;
-    }
-    
-    int numWays(int steps, int arrLen) {
-        memset(t,-1,sizeof(t));
-        return solve(steps, 0, arrLen);
-    }
+    int t[502][502];
+    int m=1e9+7;
+    
+    int solve(int ind, int steps, int n){
+        if(steps==0){
+            if(ind==0)
+                return 1;
+            else
+                return 0;
+        }
+            
+        if(ind<0 || ind>=n)
+            return 0;
+        if(t[ind][steps]!=-1)
+            return t[ind][steps];
+        long long int p=solve(ind-1, steps-1, n);
+        long long int q=solve(ind+1, steps-1, n);
+        long long int r=solve(ind, steps-1, n);
+        return t[ind][steps]=(p%m + q%m + r%m)%m;
+    }
+    
+    int numWays(int steps, int arrLen) {
+        int ind=0;
+        memset(t,-1,sizeof(t));
+        return solve(0, steps, arrLen);
+    }
 };
