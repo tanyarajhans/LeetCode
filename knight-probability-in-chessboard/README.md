@@ -1,3 +1,4 @@
+[Discussion Post (created on 7/6/2021 at 21:9)](https://leetcode.com/problems/knight-probability-in-chessboard/discuss/1322868/C%2B%2B-or-Memoization-or-Beats-99)  
 <h2>688. Knight Probability in Chessboard</h2><h3>Medium</h3><hr><div><p>On an <code>N</code>x<code>N</code> chessboard, a knight starts at the <code>r</code>-th row and <code>c</code>-th column and attempts to make exactly <code>K</code> moves. The rows and columns are 0 indexed, so the top-left square is <code>(0, 0)</code>, and the bottom-right square is <code>(N-1, N-1)</code>.</p>
 
 <p>A chess knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction.</p>
