@@ -1,24 +1,26 @@
 class Solution {
 public:
-   
-    bool isMatch(string s, string p) {
-        int n=s.size();
-        int m=p.size();
-        bool t[n+1][m+1];
-        memset(t,false,sizeof(t));
-        t[0][0]=true;
-        for (int j=0;j<m && p[j]=='*'; j++) {
-            t[0][j+1]=true;
-        }
-        for(int i=1;i<n+1;i++){
-            for(int j=1;j<m+1;j++){
-                 if(p[j-1]=='*'){
-                    t[i][j]=(t[i-1][j] || t[i][j-1]);
-                }
-                else
-                t[i][j]=((s[i-1]==p[j-1] || p[j-1]=='?') && t[i-1][j-1]);   
-            }
-        }
-        return t[n][m];
-    }
+    bool match(string& s, string& p, int i, int j, vector<vector<int>>& v){
+        if(i==s.size()&&j==p.size())
+            return true;
+        else if(i==s.size()) 
+            return (p[j]=='*'&& match(s,p,i,j+1,v));
+        else if(j==p.size())
+            return false;
+        
+        if(v[i][j]!=-1) return v[i][j];
+        
+        if(p[j]=='*')
+            return v[i][j]= (match(s,p,i,j+1,v)||match(s,p,i+1,j,v));
+        
+        if(p[j]=='?'||s[i]==p[j])
+            return v[i][j] = match(s,p,i+1,j+1,v);
+        
+        return false;
+    }
+    
+    bool isMatch(string s, string p) {
+    vector<vector<int>> v(s.size(), vector<int>(p.size(), -1));  
+       return match(s,p,0,0,v);
+    }
 };
