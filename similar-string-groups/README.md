@@ -1,3 +1,4 @@
+[Discussion Post (created on 27/6/2021 at 11:20)](https://leetcode.com/problems/similar-string-groups/discuss/1365449/DSU-or-C%2B%2B)  
 <h2>839. Similar String Groups</h2><h3>Hard</h3><hr><div><p>Two strings <code>X</code>&nbsp;and <code>Y</code>&nbsp;are similar if we can swap two letters (in different positions) of <code>X</code>, so that&nbsp;it equals <code>Y</code>. Also two strings <code>X</code> and <code>Y</code> are similar if they are equal.</p>
 
 <p>For example, <code>"tars"</code>&nbsp;and <code>"rats"</code>&nbsp;are similar (swapping at positions <code>0</code> and <code>2</code>), and <code>"rats"</code> and <code>"arts"</code> are similar, but <code>"star"</code> is not similar to <code>"tars"</code>, <code>"rats"</code>, or <code>"arts"</code>.</p>
