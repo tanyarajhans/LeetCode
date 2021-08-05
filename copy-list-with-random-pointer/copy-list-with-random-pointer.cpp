@@ -17,23 +17,24 @@ public:
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
-        if (head == NULL) 
+        if(head==NULL)
             return NULL;
-        Node* curr = head;
-        Node* temp;
-        while(curr!=NULL){
-            temp=curr->next;
-            Node* t=new Node(curr->val);
-            curr->next=t;
-            t->next=temp;
-            curr=temp;
+        Node* temp=head;
+        while(temp!=NULL){
+            Node* copy=new Node(temp->val);
+            Node* nex=temp->next;
+            temp->next=copy;
+            copy->next=nex;
+            temp=temp->next->next;
         }
-        curr=head;
-        while(curr){
-             if(curr->random)
-                curr->next->random = curr->random->next;
-             curr=curr->next->next;
-        }
+        temp=head;
+        while(temp!=NULL){
+            if(temp->random!=NULL)
+                temp->next->random=temp->random->next;
+            else
+                temp->next->random=NULL;
+            temp=temp->next->next;
+        } 
         Node* og=head;
         Node* copyHead=head->next;
         
