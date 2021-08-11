@@ -17,35 +17,15 @@ public:
             return l2;
         if(l2==NULL)
             return l1;
-        if(l1->val>l2->val)
-            swap(l1,l2);
-        ListNode* x=l1;
-        ListNode* y=l2;
-        ListNode* dummy=new ListNode(0);
-        dummy->next=NULL;
-        ListNode* temp=dummy;
-        while(x!=NULL && y!=NULL){
-            if(x->val<=y->val){
-                temp->next=x;
-                temp=temp->next;
-                x=x->next;
-            }
-            else{
-                temp->next=y;
-                temp=temp->next;
-                y=y->next;
-            }
+        ListNode* ans;
+        if(l1->val<=l2->val){
+            ans=l1;
+            l1->next=mergeTwoLists(l1->next, l2);
         }
-        while(x!=NULL){
-            temp->next=x;
-            temp=temp->next;
-            x=x->next;
+        else{
+            ans=l2;
+            l2->next=mergeTwoLists(l1, l2->next);
         }
-        while(y!=NULL){
-            temp->next=y;
-            temp=temp->next;
-            y=y->next;
-        }
-        return dummy->next;
+        return ans;
     }
 };
