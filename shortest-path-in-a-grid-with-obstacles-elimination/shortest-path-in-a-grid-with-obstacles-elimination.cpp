@@ -2,55 +2,48 @@
 
 class Solution {
 public:
-    int n;
-    int m;
-    long long int dp[42][42][1602];
-    
-    long long int solve(vector<vector<int>>& grid, int k, int i, int j){
-        if(grid[i][j]<0)
-            return MAX;
-        
-        if(i==n-1 && j==m-1)
-            return 0;
-            
-        
-        if(dp[i][j][k]!=-1)
-            return dp[i][j][k];
-        
-        if(grid[i][j]==1){
-            k--;
-            
-            if(k<0)
-            return MAX;
-        }
-             
-        int currVal = grid[i][j];
-        grid[i][j] = -1;
-        
-        long long int ans=MAX;
-        
-        if(i+1<n)
-            ans=1+solve(grid, k, i+1, j);
-        if(j-1>=0)
-            ans=min(ans, 1+solve(grid, k, i, j-1));
-        if(j+1<m)
-            ans=min(ans, 1+solve(grid, k, i, j+1));
-        if(i-1>=0)
-            ans=min(ans, 1+solve(grid, k, i-1, j));
-        
-        
-        grid[i][j]=currVal;
-        
-        return dp[i][j][k]=ans;
-    }
-    
-    int shortestPath(vector<vector<int>>& grid, int k) {
-        n=grid.size();
-        m=grid[0].size();
-        memset(dp,-1,sizeof(dp));
-        long long int ans=solve(grid, k, 0, 0);
-        if(ans>=MAX)
-        return -1;
-        return ans;
+    vector<vector<int>> dirs = {{0, -1}, {0, 1}, {1, 0}, {-1, 0}};
+	int shortestPath(vector<vector<int>>& grid, int k) {
+		int m = grid.size();
+        int n = grid[0].size();
+        //Following 2 lines improves performance from ~50% to ~98%.. When the same is incorporated in the main loop it will be ~100%
+        int minSteps = m + n -2;
+        if (k >= minSteps) 
+            return minSteps;
+
+		queue<vector<int>> q;
+		int step = 0;
+		vector<vector<int>> visited(m, vector<int>(n, k+1));
+		q.push({0, 0, 0});
+		visited[0][0]= 0;
+
+		while (!q.empty()) { 
+			int l = q.size();
+			for (int i = 0; i < l; i++) { 
+				vector<int> s = q.front();
+				q.pop();
+				if (s[2] == k + 1) { 
+					continue;
+				}
+
+				if (s[0] == m - 1 && s[1] == n - 1) { 
+					return step;
+				}
+                
+				for (vector<int>& dir : dirs) { 
+					int new_x = s[0] + dir[0];
+					int new_y = s[1] + dir[1];
+					//Note: validity, visited
+					if (new_x >= 0 && new_x < m && new_y >= 0 && new_y < n) { 
+                       if (visited[new_x][new_y] <= s[2] + grid[new_x][new_y]) continue; // came here with less obstancles removed.
+                        visited[new_x][new_y] = s[2] +  grid[new_x][new_y];
+ 						q.push({new_x, new_y, s[2] +  grid[new_x][new_y]});
+
+					}
+				}
+			}
+			step++;
+		}
+		return -1;
     }
 };
