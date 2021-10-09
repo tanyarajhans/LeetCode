@@ -9,12 +9,12 @@ public:
             else{
                 int v=nums[i]-1;
                 if(nums[i]!=i+1 && nums[v]!=v+1)
+                {
                     swap(nums[i], nums[v]);
-                else i++;
+                }
+                else
+                    i++;
             }
-        }
-        for(int i=0;i<n;i++){
-            cout<<nums[i];
         }
         for(int i=0;i<n;i++){
             if(nums[i]!=i+1)
