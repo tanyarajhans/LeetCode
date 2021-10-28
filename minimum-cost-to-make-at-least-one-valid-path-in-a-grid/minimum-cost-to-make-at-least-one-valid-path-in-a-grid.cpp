@@ -4,30 +4,48 @@ public:
     int dy[4] = {1, -1, 0, 0};
     
     int minCost(vector<vector<int>>& grid) {
-        int m = grid.size(), n = grid[0].size();
-        vector<vector<int>> dp(m, vector<int>(n, m+n));
-        dp[0][0] = 0;
-
-        priority_queue<vector<int>, vector<vector<int>>, greater<vector<int>> > pq;
-        pq.push({0, 0, 0});
+        int m = grid.size(); 
+        int n = grid[0].size();
+       
+        deque<pair<int, int>> dq;
+        vector<int> dist(m*n, INT_MAX);
         
-        while(!pq.empty()) {
-            auto v = pq.top();
-            pq.pop();
-            int r = v[1], c = v[2];
-
-            for(int k=0; k<4; k++) {
-                int nr = r + dx[k];
-                int nc = c + dy[k];
-                int cost = 1;
-                if(k+1 == grid[r][c]) cost = 0;
-                if(nr >= 0 && nc >=0 && nr < m && nc < n && cost + v[0] < dp[nr][nc]) {
-                    dp[nr][nc] = cost + v[0];
-                    pq.push({dp[nr][nc], nr, nc});
-                }    
-            }
-        }
+        int src = 0, des = m*n-1;
+        
+        dq.push_front({src, 0});
+        dist[src] = 0;
+                
+        while(!dq.empty()) {
+            int curr = dq.front().first;
+            int dis = dq.front().second;
             
-        return dp[m-1][n-1];
+            dq.pop_front();
+            
+            if(curr == des)
+                return dis;
+            
+            int x = curr/n , y = curr%n;
+            
+            for(int k=0; k<4; k++) {
+                int i = x + dx[k];
+                int j = y + dy[k];
+                
+                int u = i*n + j;
+                
+                if(i>=0 && j>=0 && i<m && j<n) {
+                    int wt = (grid[x][y] != k+1);
+                    
+                    if(dis + wt < dist[u])
+                    {
+                        dist[u] = dis + wt;
+                        if(wt == 1) 
+                            dq.push_back({u, dis + wt});
+                        else 
+                            dq.push_front({u, dis + wt});
+                    }
+                }
+            }
+        }        
+        return -1;
     }
 };
