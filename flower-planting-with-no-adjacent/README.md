@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/9/2021 at 12:44)](https://leetcode.com/problems/flower-planting-with-no-adjacent/discuss/1546777/C%2B%2B-or-Easy-to-understand-or-DFS)  
 <h2>1042. Flower Planting With No Adjacent</h2><h3>Medium</h3><hr><div><p>You have <code>n</code> gardens, labeled from <code>1</code> to <code>n</code>, and an array <code>paths</code> where <code>paths[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> describes a bidirectional path between garden <code>x<sub>i</sub></code> to garden <code>y<sub>i</sub></code>. In each garden, you want to plant one of 4 types of flowers.</p>
 
 <p>All gardens have <strong>at most 3</strong> paths coming into or leaving it.</p>
