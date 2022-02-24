@@ -18,35 +18,26 @@ public:
             return y;
         if(y==NULL)
             return x;
+        ListNode* dummy = new ListNode(0);
+        ListNode* temp=dummy;
         ListNode* a=x;
         ListNode* b=y;
-        ListNode* temp;
-        if(a->val<b->val){
-            temp = a;
-            a=a->next;
-        }
-        else{
-            temp=b;
-            b=b->next;
-        }
-        ListNode* head=temp;
         while(a && b){
             if(a->val<b->val){
                 temp->next=a;
-                temp=temp->next;
                 a=a->next;
             }
             else{
                 temp->next=b;
-                temp=temp->next;
                 b=b->next;
             }
+            temp=temp->next;
         }
         if(!a)
             temp->next=b;
         if(!b)
             temp->next=a;
-        return head;
+        return dummy->next;
     }
     
     ListNode* sortList(ListNode* head) {
