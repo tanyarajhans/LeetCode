@@ -1,9 +1,9 @@
 class Solution {
 public:
     vector<double> ans;
-    unordered_map<int, int> m;
-    priority_queue<int> maxh;
-    priority_queue<int, vector<int>, greater<int>> minh;
+    unordered_map<int, int> m; //to store the elements to be discarded
+    priority_queue<int> maxh; //max heap for lower half 
+    priority_queue<int, vector<int>, greater<int>> minh; //min heap for upper half 
     
     vector<double> medianSlidingWindow(vector<int>& nums, int k) {
         int n=nums.size();
@@ -14,8 +14,7 @@ public:
             minh.push(maxh.top());
             maxh.pop();
         }
-        int i=k;
-        while(i<n){
+        for(int i=k;i<n;i++){
             if(k%2==0){
                 ans.push_back(((double)maxh.top()+(double)minh.top())/2.0);
             }
@@ -25,7 +24,7 @@ public:
             int p=nums[i-k];
             int q=nums[i];
             int balance=0;
-            i++;
+            
             
             if(p<=maxh.top()){
                 balance--;
