@@ -2,39 +2,45 @@ class Solution {
 public:
     
     int p[1001];
-    vector<pair<int, pair<int,int>>> adj; //cost,i,j
+    vector<vector<pair<int,int>>> adj; //cost,i,j
+    priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>>> pq; //cost,node
     
-    int find(int x){
-        if(p[x]==x)
-            return x;
-        return p[x]=find(p[x]);
-    }
-    
-    void merge(int x, int y){
-        p[x]=y;
-    }
     
     int minCostConnectPoints(vector<vector<int>>& points) {
         int n=points.size();
         for(int i=0;i<n;i++){
-            for(int j=i+1;j<n;j++){
+            vector<pair<int,int>> t;
+            for(int j=0;j<n;j++){
+                if(i==j)
+                    continue;
                 int d=abs(points[i][0]-points[j][0])+abs(points[i][1]-points[j][1]);
-                adj.push_back({d,{i,j}});
+                t.push_back({d,j});
+            }
+            adj.push_back(t);
+        }
+        pq.push({0,0});
+        int cost=0;
+        vector<int> vis(n,0);
+        vector<int> dist(n,INT_MAX);
+        dist[0]=0;
+        while(!pq.empty()){
+            auto curr=pq.top();
+            pq.pop();
+            if(vis[curr.second])
+                continue;
+            vis[curr.second]=1;
+            for(auto u: adj[curr.second]){
+                int dis=u.first;
+                int node=u.second;
+                if(!vis[node] && dis<dist[node]){
+                    dist[node]=dis;
+                    pq.push({dis,node});
+                }
             }
         }
-        for(int i=0;i<n;i++)
-            p[i]=i;
-        sort(adj.begin(), adj.end());
-        int s=0;
-        int k=adj.size();
-        for(int i=0;i<k;i++){
-            int u=find(adj[i].second.first);
-            int v=find(adj[i].second.second);
-            if(u!=v){
-                s+=adj[i].first;
-                merge(u,v);
-            }
+        for(int i=0;i<n;i++){
+            cost+=dist[i];
         }
-        return s;
+        return cost;
     }
 };
