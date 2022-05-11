@@ -1,19 +1,22 @@
 class Solution {
 public:
-    int dp[5][51];
-    
-    int solve(int v, int size, int n){
-        if(size==n)
-            return 1;
-        if(v==5)
-            return 0;
-        if(dp[v][size]!=-1)
-            return dp[v][size];
-        return dp[v][size]=solve(v,size+1,n)+solve(v+1,size,n);
-    }
-    
     int countVowelStrings(int n) {
-        memset(dp,-1,sizeof(dp));
-        return solve(0,0,n);
+        int dp[n][5];
+        memset(dp,0,sizeof(dp));
+        for(int i=0;i<5;i++){
+            dp[0][i]=1; //string of size 1
+        }
+        for(int i=1;i<n;i++){ //i length
+            for(int j=0;j<5;j++){ //starting with j
+                for(int k=j;k<5;k++){
+                    dp[i][j]+=dp[i-1][k];
+                }
+            }
+        }
+        int ans=0;
+        for(int i=0;i<5;i++){
+            ans+=dp[n-1][i];
+        }
+        return ans;
     }
 };
