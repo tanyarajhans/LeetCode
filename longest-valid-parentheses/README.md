@@ -1,3 +1,4 @@
+[Discussion Post (created on 24/4/2022 at 18:44)](https://leetcode.com/problems/longest-valid-parentheses/discuss/2069833/C%2B%2B-or-DP)  
 <h2>32. Longest Valid Parentheses</h2><h3>Hard</h3><hr><div><p>Given a string containing just the characters <code>'('</code> and <code>')'</code>, find the length of the longest valid (well-formed) parentheses substring.</p>
 
 <p>&nbsp;</p>
