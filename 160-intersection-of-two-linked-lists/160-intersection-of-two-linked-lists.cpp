@@ -13,13 +13,13 @@ public:
             return NULL;
         ListNode *x=headA, *y=headB;
         while(x!=y){
-            if(x)
-                x=x->next;
-            else
+            x=x->next;
+            y=y->next;
+            if(x==y)
+                break;
+            if(x==NULL)
                 x=headB;
-            if(y)
-                y=y->next;
-            else
+            if(y==NULL)
                 y=headA;
         }
         return x;
