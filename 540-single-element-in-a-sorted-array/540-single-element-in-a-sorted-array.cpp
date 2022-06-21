@@ -7,7 +7,7 @@ public:
         //after: first instance - at odd index, second instance at even index
         while(l<=h){
             int mid=l+(h-l)/2;
-            if((mid%2==0 && (nums[mid]==nums[mid+1]))|| (mid%2==1 && (nums[mid]==nums[mid-1])))//before
+            if((mid%2==0 && (nums[mid]==nums[mid+1]))|| (mid%2==1 && (nums[mid]==nums[mid-1])))//before and same as nums[mid]==nums[mid^1]
                 l=mid+1;
             else
                 h=mid-1;
