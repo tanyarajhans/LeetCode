@@ -7,9 +7,9 @@ public:
             pq.push(nums[i]);
         }
         for(int i=k;i<n;i++){
-            pq.push(nums[i]);
-            if(pq.size()>k){
+            if(pq.top()<nums[i]){
                 pq.pop();
+                pq.push(nums[i]);
             }
         }
         int ans=pq.top();
