@@ -9,18 +9,34 @@
  */
 class Solution {
 public:
-    
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        TreeNode* ans;
         if(root==NULL)
             return NULL;
-        if(root==p || root==q)
-            return root;
-        TreeNode* l=lowestCommonAncestor(root->left, p,q);
-        TreeNode* r=lowestCommonAncestor(root->right, p,q);
-        if(l!=NULL && r!=NULL)
-           return root;
-        if(r==NULL)
-            return l;
-        return r;
+        stack<TreeNode*> st;
+        map<TreeNode*, TreeNode*> par;
+        par[root]=NULL;
+        st.push(root);
+        while(par.count(p)==0 || par.count(q)==0){
+            TreeNode* curr=st.top();
+            st.pop();
+            if(curr->left){
+                par[curr->left]=curr;
+                st.push(curr->left);
+            }
+            if(curr->right){
+                par[curr->right]=curr;
+                st.push(curr->right);
+            }
+        }
+        set<TreeNode*> anc;
+        while(p){
+            anc.insert(p);
+            p=par[p];
+        }
+        while(anc.count(q)==0){
+            q=par[q];
+        }
+        return q;
     }
 };
