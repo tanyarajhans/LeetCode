@@ -1,37 +1,19 @@
 class Solution {
 public:
-    int minRefuelStops(int target, int start, vector<vector<int>>& arr) {
-        int n=arr.size();
-        if(n==0){
-            if(target<=start)
-                return 0;
-            return -1;
-        }
-        int ans=0;
-        int loc=0;
-        priority_queue<int> pq; //fuel of stations crossed till now
-        for(auto x: arr){
-            int dis=x[0];
-            int f=x[1];
-            start-=(dis-loc);
-            while(!pq.empty() && start<0){
-                start+=pq.top();
-                pq.pop();
-                ans++;
+    int minRefuelStops(int target, int startFuel, vector<vector<int>>& stations) {
+        int n=stations.size();
+        long dp[n+1]; //dp[i] denotes max distance we can cover by using this station as refueling station
+        memset(dp,0,sizeof(dp));
+        dp[0]=startFuel;
+        for(int i=0;i<n;i++){
+            for(int j=i;j>=0 && dp[j]>=stations[i][0];j--){
+                dp[j+1]=max(dp[j+1], dp[j]+stations[i][1]);
             }
-            if(start<0)
-                return -1;
-            pq.push(f);
-            loc=dis;
         }
-        start-=(target-loc);
-        while(!pq.empty() && start<0){
-            start+=pq.top();
-            pq.pop();
-            ans++;
+        for(int i=0;i<=n;i++){
+            if(dp[i]>=target)
+                return i;
         }
-        if(start<0)
-            return -1;
-        return ans;
+        return -1;
     }
 };
