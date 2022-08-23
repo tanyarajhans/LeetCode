@@ -1,0 +1,57 @@
+class Solution {
+public:
+    vector<int> spiralOrder(vector<vector<int>>& matrix) {
+        // first we will find no. of rows and columns
+        int row = matrix.size();
+        int col = matrix[0].size();
+        
+        //initialising index
+        int startingrow = 0;
+        int startingcol = 0;
+        int endingrow = row-1;
+        int endingcol = col-1;
+        
+        int count = 0;
+        int total = row*col;
+        // we have to return the answer in vector form, we will create vector!  
+        vector<int> ans;
+        
+        /* Program Logic
+           Our basic aim is to get spiral print, so we will
+           1st ->print first row 
+           2nd -> print last col
+           3rd -> last row
+           4th -> first col */
+        
+        while( count < total){
+        // printing first row
+        for(int index = startingcol; count < total && index <= endingcol; index++ ){
+            ans.push_back(matrix[startingrow][index]);
+            count++;
+        }
+        startingrow++;
+         
+        // printing last col    
+        for(int index =startingrow; count < total && index <= endingrow; index++){
+            ans.push_back(matrix[index][endingcol]);
+            count++;
+        }
+        endingcol--;    
+            
+        // printing last row 
+        for(int index = endingcol ; count < total && index >= startingcol; index-- ){
+            ans.push_back(matrix[endingrow][index]);
+            count++;
+        }
+        endingrow--;
+            
+        //printing first col
+        for(int index = endingrow; count < total && index >= startingrow; index--){
+            ans.push_back(matrix[index][startingcol]);
+            count++;
+        } 
+        startingcol++;
+        }
+         return ans; 
+    }
+};
